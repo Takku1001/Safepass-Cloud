@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C++: build SafePass (Phase 1)",
+            "command": "g++",
+            "args": [
+                "-std=c++11",
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/cpp/src/main.cpp",
+                "-o",
+                "${workspaceFolder}/cpp/build/SafePass"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compiles the C++ console password manager into cpp/build/SafePass"
+        }
+    ]
+}
